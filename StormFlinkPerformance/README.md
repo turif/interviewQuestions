@@ -3,6 +3,8 @@ This task will test several areas
 * Your ability to use Docker and set up Kafka (DevOps)
 * Your ability to learn and use Storm and Flink (Java)
 * Your ability to analyze performance (Performance analysis)
+* Your ability to use a git workflow (Version Control)
+* Your ability to automate running/building (Automation)
 
 #Prerequisites
 * Python 2.7 (Other versions may worked, but script was tested on 2.7)
@@ -55,9 +57,16 @@ optional arguments:
   * Determine the throughput of your system in bytes/second
   * Determine the rate of records/second
   * Determine which is faster - Storm or Flink
-  
+* Automation
+  * Building and running should be automated and simple
+
+#Working/Sharing
+* Fork the code into your own git repo
+* Check your code into your repo, this is how we will share and look at your code during your demo
+
 #And then...
 * You will present your solution to the nvent team
 * You will need to explain your solution
+* You will need to explain how to build and run your code
 * You will need to explain your performance and verification findings
 * You will need to run a live demo of your code working
