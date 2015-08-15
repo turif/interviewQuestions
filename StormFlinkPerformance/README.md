@@ -53,3 +53,9 @@ optional arguments:
   * Determine the throughput of your system in bytes/second
   * Determine the rate of records/second
   * Determine which is faster - Storm or Flink
+  
+#And then...
+* You will present your solution to the nvent team
+* You will need to explain your solution
+* You will need to explain your performance and verification findings
+* You will need to run a live demo of your code working
