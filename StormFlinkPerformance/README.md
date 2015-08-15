@@ -12,7 +12,7 @@ This task will test several areas
 * Java 7
 
 #Working/Sharing
-* Fork the code into your own git repo
+* Fork this repo into your own git repo
 * Check your code into your repo, this is how we will share and look at your code during your demo
 
 #Setup Requirements
