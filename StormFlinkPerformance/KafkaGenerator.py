@@ -18,7 +18,7 @@ parser.add_argument("-q", "-quiet", action='store_true',
 
 
 args         = vars(parser.parse_args())
-max          = args["m"]
+maxRecords   = args["m"]
 kafkaConnect = args["k"]
 topic        = args["t"]
 quiet        = args["q"]
@@ -44,7 +44,7 @@ writer = avro.io.DatumWriter(schema)
 bytes_writer = io.BytesIO()
 encoder = avro.io.BinaryEncoder(bytes_writer)
 
-for x in xrange(max):  
+for x in xrange(maxRecords):  
   writer.write( {'id': x, 'random': randint(1, 3) ,'data': str(uuid.uuid4().get_hex().upper()[0:20])}, encoder)
   raw_bytes = bytes_writer.getvalue()
   producer.send_messages(topic, raw_bytes)
