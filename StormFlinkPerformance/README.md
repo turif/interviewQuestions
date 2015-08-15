@@ -13,6 +13,7 @@ This task will test several areas
 * Set up docker on your local machine
   * https://docs.docker.com/installation/
 * Create a docker container running a single node kafka instance
+* Feel free to tweak the Kafka configuration
 
 
 #Send avro data to Kafka 
