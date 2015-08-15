@@ -10,6 +10,7 @@ This task will test several areas
 * Python 2.7 (Other versions may worked, but script was tested on 2.7)
 * pip
 * Java 7
+* Eclipse
 
 #Working/Sharing
 * Fork this repo into your own git repo
@@ -43,6 +44,7 @@ optional arguments:
 
 
 #Programming assignment (Java)
+* Set up your project in Eclipse
 * Use the KafkaGenerator python script to push data into Kafka
 * Create a Storm topology to move data out of the "neverwinter" topic in Kafka
   * https://storm.apache.org/
