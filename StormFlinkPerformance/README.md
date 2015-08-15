@@ -37,6 +37,7 @@ optional arguments:
 
 
 #Programming assignment (Java)
+* Use the KafkaGenerator python script to push data into Kafka
 * Create a Storm topology to move data out of the "neverwinter" topic in Kafka
   * https://storm.apache.org/
   * The data will be read from the topic "neverwinter"
