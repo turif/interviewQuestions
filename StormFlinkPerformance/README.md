@@ -22,7 +22,7 @@ python KafkaGenerator.py -q
 
 #For full usage details
 $ python KafkaGenerator.py -h
-usage: KafkaGenerator.py [-h] [-m M] [-k K] [-t T] [-q]
+usage: KafkaGenerator.py [-h] [-m M] [-k K] [-t T] [-v] [-q]
 
 Push Avro messages into Kafka
 
@@ -46,6 +46,9 @@ optional arguments:
     * Messages with the "random" field set to "3" will be moved to topic "random3"
 * Perform the same task as above using Flink
   * https://flink.apache.org/
+* Verification - Within your Storm/Flink solutions:
+  * Verify that all the records have made it to the topics "random[1-3]"
+  * Verify that all the records have made it to the correct topic
 * Include metrics in your code
   * Determine the throughput of your system in bytes/second
   * Determine the rate of records/second
