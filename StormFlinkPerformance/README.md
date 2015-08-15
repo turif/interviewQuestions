@@ -11,13 +11,15 @@ This task will test several areas
 * pip
 * Java 7
 
+#Working/Sharing
+* Fork the code into your own git repo
+* Check your code into your repo, this is how we will share and look at your code during your demo
 
 #Setup Requirements
 * Set up docker on your local machine
   * https://docs.docker.com/installation/
 * Create a docker container running a single node kafka instance
 * Feel free to tweak the Kafka configuration
-
 
 #Send avro data to Kafka 
 ```
@@ -60,10 +62,6 @@ optional arguments:
   * Determine which is faster - Storm or Flink
 * Automation
   * Building and running should be automated and simple
-
-#Working/Sharing
-* Fork the code into your own git repo
-* Check your code into your repo, this is how we will share and look at your code during your demo
 
 #And then...
 * You will present your solution to the nvent team
