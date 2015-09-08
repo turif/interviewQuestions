@@ -1,4 +1,6 @@
 # About the directory structure
+docker
+ * contains the docker file 
 
 flink-kafka-sender
   * flink version of kafka sender
