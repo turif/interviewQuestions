@@ -13,7 +13,7 @@ storm-kafka-sender
 
 # Running the Docker Container
 It starts zookeeper & kafka server
-* docker run -d -t -p 9092:9092 -p 2181:2181 kafkatest
+* docker run --net=host -d -t -p 9092:9092 -p 2181:2181 kafkatest
 
 # Starting the storm cluster
 
