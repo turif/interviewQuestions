@@ -25,8 +25,21 @@ storm-kafka-sender
 -->mvn clean package
 
 3. running the compiled binary
-The first parameter is the name of topic which should be read by storm.
+The first parameter of KafkaSenderMain is the name of topic which should be read by Storm.
 
 -->storm jar storm-kafka-sender-1.0.jar com.nventdata.kafkasender.KafkaSenderMain neverwinter
 
+# Starting the flink Cluster
 
+1. #$FLINK_DIR/bin/start-local.sh &
+
+# Building and Running Flink Kafka Sender
+
+1.  building the FAT jar. The FAT jar contains all 3rd party dependencies of Flink.
+
+-->mvn clean package
+
+2. running the compiled binary
+The first parameter of KafkaSenderMain is the name of topic which should be read by Flink.
+
+flink run flink-kafka-sender-1.0.jar neverwinter
