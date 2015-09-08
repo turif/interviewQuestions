@@ -1,0 +1,41 @@
+#DOCKER FILE FOR FLINK & KAFKA & STORM
+FROM ubuntu
+
+MAINTAINER Ferenc Turi
+
+RUN apt-get install -y software-properties-common
+
+RUN add-apt-repository ppa:webupd8team/java -y
+
+#for git Install
+#RUN sudo add-apt-repository ppa:git-core/ppa
+
+RUN apt-get update
+
+RUN apt-get install -y mc
+
+RUN apt-get install -y openjdk-7-jdk
+
+RUN apt-get install -y wget
+
+RUN wget http://xenia.sote.hu/ftp/mirrors/www.apache.org//kafka/0.8.2.1/kafka_2.10-0.8.2.1.tgz
+
+RUN tar zxvf kafka_2.10-0.8.2.1.tgz -C .
+
+RUN rm kafka_2.10-0.8.2.1.tgz
+
+ENV PATH /kafka_2.10-0.8.2.1/bin:$PATH
+
+WORKDIR /kafka_2.10-0.8.2.1
+
+EXPOSE 9092 2181
+
+VOLUME [ "/data","/logs" ]
+
+COPY ./start.sh /
+
+ENTRYPOINT ["/start.sh"]
+
+#CMD ["./zookeeper-server-start.sh","../config/zookeeper.properties","&"]
+
+#CMD ["./kafka-server-start.sh","../config/server.properties"]
