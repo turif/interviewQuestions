@@ -16,5 +16,17 @@ storm-kafka-sender
 
 3. $STORM_DIR/bin/storm ui &
 
-# Building Storm Kafka Sender
+# Building and Running Storm Kafka Sender
+
+1.  dependencies should be copied to the $STORM_HOME/extlib folder which contains redistributable dependencies.
+
+2.  building the lightweight jar. The lightweight jar does not contain 3rd party dependencies. Should be provided prior in the extlib folder.
+
+-->mvn clean package
+
+3. running the compiled binary
+The first parameter is the name of topic which should be read by storm.
+
+-->storm jar storm-kafka-sender-1.0.jar com.nventdata.kafkasender.KafkaSenderMain neverwinter
+
 
