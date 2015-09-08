@@ -1,3 +1,2 @@
-# interviewQuestions
-About the directory structure
+# About the directory structure
 
